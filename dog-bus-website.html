@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDogBus.com - Dog School Bus Service</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url('/api/placeholder/1200/600');
+            background-size: cover;
+            background-position: center;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-yellow-400 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-blue-900">MyDogBus.com 🚌🐕</a>
+            <div class="space-x-6">
+                <a href="#services" class="text-blue-900 hover:text-blue-700">Services</a>
+                <a href="#how-it-works" class="text-blue-900 hover:text-blue-700">How It Works</a>
+                <a href="#pricing" class="text-blue-900 hover:text-blue-700">Pricing</a>
+                <a href="#contact" class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-white py-32">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-6">Your Dog's Favorite School Bus</h1>
+            <p class="text-xl mb-8">Safe, reliable, and fun transportation to doggy daycare and back!</p>
+            <button class="bg-yellow-400 text-blue-900 px-8 py-3 rounded-lg text-xl font-bold hover:bg-yellow-300">
+                Schedule a Ride
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Daily Transport</h3>
+                    <p>Regular pickup and drop-off service to and from doggy daycare.</p>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Group Rides</h3>
+                    <p>Social transportation with other friendly dogs in your neighborhood.</p>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Private Rides</h3>
+                    <p>Exclusive transportation for dogs who prefer traveling solo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+                <div class="text-center">
+                    <div class="text-5xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold mb-2">Book Online</h3>
+                    <p>Schedule rides through our easy-to-use platform</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl mb-4">🚌</div>
+                    <h3 class="text-xl font-bold mb-2">We Pick Up</h3>
+                    <p>Our trained drivers collect your pup from your home</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl mb-4">🦮</div>
+                    <h3 class="text-xl font-bold mb-2">Safe Transport</h3>
+                    <p>Comfortable, monitored rides to their destination</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl mb-4">✨</div>
+                    <h3 class="text-xl font-bold mb-2">Happy Returns</h3>
+                    <p>Safe delivery back home after their day out</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Pricing Plans</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Basic Ride</h3>
+                    <p class="text-4xl font-bold mb-6">$25<span class="text-lg">/ride</span></p>
+                    <ul class="space-y-3 mb-8">
+                        <li>✓ Single trip transport</li>
+                        <li>✓ GPS tracking</li>
+                        <li>✓ Text updates</li>
+                    </ul>
+                    <button class="w-full bg-yellow-400 text-blue-900 py-2 rounded-lg hover:bg-yellow-300">
+                        Choose Plan
+                    </button>
+                </div>
+                <div class="bg-blue-900 text-white p-8 rounded-lg shadow-lg transform scale-105">
+                    <h3 class="text-2xl font-bold mb-4">Weekly Pass</h3>
+                    <p class="text-4xl font-bold mb-6">$100<span class="text-lg">/week</span></p>
+                    <ul class="space-y-3 mb-8">
+                        <li>✓ 5 days of transport</li>
+                        <li>✓ Priority pickup</li>
+                        <li>✓ Photo updates</li>
+                        <li>✓ Treat service</li>
+                    </ul>
+                    <button class="w-full bg-yellow-400 text-blue-900 py-2 rounded-lg hover:bg-yellow-300">
+                        Choose Plan
+                    </button>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Monthly Pass</h3>
+                    <p class="text-4xl font-bold mb-6">$350<span class="text-lg">/month</span></p>
+                    <ul class="space-y-3 mb-8">
+                        <li>✓ 20 days of transport</li>
+                        <li>✓ VIP service</li>
+                        <li>✓ Video updates</li>
+                        <li>✓ Flexible scheduling</li>
+                    </ul>
+                    <button class="w-full bg-yellow-400 text-blue-900 py-2 rounded-lg hover:bg-yellow-300">
+                        Choose Plan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Get Started</h2>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block mb-2">Your Name</label>
+                        <input type="text" class="w-full p-2 border rounded-lg" required>
+                    </div>
+                    <div>
+                        <label class="block mb-2">Email</label>
+                        <input type="email" class="w-full p-2 border rounded-lg" required>
+                    </div>
+                    <div>
+                        <label class="block mb-2">Dog's Name</label>
+                        <input type="text" class="w-full p-2 border rounded-lg" required>
+                    </div>
+                    <div>
+                        <label class="block mb-2">Message</label>
+                        <textarea class="w-full p-2 border rounded-lg h-32"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MyDogBus.com</h3>
+                    <p>Making dog transportation safe and fun!</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p>Email: woof@mydogbus.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+                        <li><a href="#pricing" class="hover:text-yellow-400">Pricing</a></li>
+                        <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-yellow-400">Facebook</a>
+                        <a href="#" class="hover:text-yellow-400">Instagram</a>
+                        <a href="#" class="hover:text-yellow-400">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8 pt-8 border-t border-blue-800">
+                <p>&copy; 2024 MyDogBus.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
