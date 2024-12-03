@@ -36,7 +36,7 @@
     <section class="hero text-white py-32">
         <div class="container mx-auto text-center">
             <h1 class="text-5xl font-bold mb-6">Your Dog's Favorite School Bus</h1>
-            <p class="text-xl mb-8">Safe, reliable, and fun transportation to doggy daycare and back!</p>
+            <p class="text-xl mb-8">Safe, reliable, and fun transportation to the doggy ranch and back!</p>
             <button class="bg-yellow-400 text-blue-900 px-8 py-3 rounded-lg text-xl font-bold hover:bg-yellow-300">
                 Schedule a Ride
             </button>
@@ -50,7 +50,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
                 <div class="service-card bg-white p-6 rounded-lg shadow-lg">
                     <h3 class="text-2xl font-bold mb-4">Daily Transport</h3>
-                    <p>Regular pickup and drop-off service to and from doggy daycare.</p>
+                    <p>Regular pickup and drop-off service to and from doggy ranch.</p>
                 </div>
                 <div class="service-card bg-white p-6 rounded-lg shadow-lg">
                     <h3 class="text-2xl font-bold mb-4">Group Rides</h3>
@@ -99,8 +99,8 @@
             <h2 class="text-4xl font-bold text-center mb-12">Pricing Plans</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
                 <div class="bg-white p-8 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-4">Basic Ride</h3>
-                    <p class="text-4xl font-bold mb-6">$25<span class="text-lg">/ride</span></p>
+                    <h3 class="text-2xl font-bold mb-4">Daily Ride</h3>
+                    <p class="text-4xl font-bold mb-6">$75<span class="text-lg">/day</span></p>
                     <ul class="space-y-3 mb-8">
                         <li>✓ Single trip transport</li>
                         <li>✓ GPS tracking</li>
@@ -110,14 +110,13 @@
                         Choose Plan
                     </button>
                 </div>
-                <div class="bg-blue-900 text-white p-8 rounded-lg shadow-lg transform scale-105">
+                <div class="bg-blue-900 text-white p-8 rounded-lg transform scale-105">
                     <h3 class="text-2xl font-bold mb-4">Weekly Pass</h3>
-                    <p class="text-4xl font-bold mb-6">$100<span class="text-lg">/week</span></p>
+                    <p class="text-4xl font-bold mb-6">$300<span class="text-lg">/week</span></p>
                     <ul class="space-y-3 mb-8">
                         <li>✓ 5 days of transport</li>
-                        <li>✓ Priority pickup</li>
-                        <li>✓ Photo updates</li>
-                        <li>✓ Treat service</li>
+                        <li>✓ Ranch activities included</li>
+                        <li>✓ Daily photo updates</li>
                     </ul>
                     <button class="w-full bg-yellow-400 text-blue-900 py-2 rounded-lg hover:bg-yellow-300">
                         Choose Plan
@@ -125,11 +124,10 @@
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-lg">
                     <h3 class="text-2xl font-bold mb-4">Monthly Pass</h3>
-                    <p class="text-4xl font-bold mb-6">$350<span class="text-lg">/month</span></p>
+                    <p class="text-4xl font-bold mb-6">$1,000<span class="text-lg">/month</span></p>
                     <ul class="space-y-3 mb-8">
-                        <li>✓ 20 days of transport</li>
-                        <li>✓ VIP service</li>
-                        <li>✓ Video updates</li>
+                        <li>✓ Unlimited weekday rides</li>
+                        <li>✓ VIP ranch service</li>
                         <li>✓ Flexible scheduling</li>
                     </ul>
                     <button class="w-full bg-yellow-400 text-blue-900 py-2 rounded-lg hover:bg-yellow-300">
@@ -140,35 +138,43 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12">Get Started</h2>
-            <div class="max-w-lg mx-auto">
-                <form class="space-y-6">
-                    <div>
-                        <label class="block mb-2">Your Name</label>
-                        <input type="text" class="w-full p-2 border rounded-lg" required>
-                    </div>
-                    <div>
-                        <label class="block mb-2">Email</label>
-                        <input type="email" class="w-full p-2 border rounded-lg" required>
-                    </div>
-                    <div>
-                        <label class="block mb-2">Dog's Name</label>
-                        <input type="text" class="w-full p-2 border rounded-lg" required>
-                    </div>
-                    <div>
-                        <label class="block mb-2">Message</label>
-                        <textarea class="w-full p-2 border rounded-lg h-32"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800">
-                        Send Message
-                    </button>
-                </form>
-            </div>
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">Get Started</h2>
+        <div class="max-w-lg mx-auto">
+            <form 
+                action="https://formspree.io/f/xvgoqobp" 
+                method="POST" 
+                class="space-y-6">
+                
+                <div>
+                    <label class="block mb-2" for="name">Your Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border rounded-lg" placeholder="Enter your name" required>
+                </div>
+                
+                <div>
+                    <label class="block mb-2" for="email">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border rounded-lg" placeholder="Enter your email" required>
+                </div>
+                
+                <div>
+                    <label class="block mb-2" for="dog-name">Dog's Name</label>
+                    <input type="text" id="dog-name" name="dog-name" class="w-full p-2 border rounded-lg" placeholder="Enter your dog's name" required>
+                </div>
+                
+                <div>
+                    <label class="block mb-2" for="message">Location: Pickup City</label>
+                    <textarea id="message" name="message" class="w-full p-2 border rounded-lg h-32" placeholder="Enter your message" required></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800">
+                    Send Message
+                </button>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="bg-blue-900 text-white py-8">
