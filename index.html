@@ -138,42 +138,22 @@
         </div>
     </section>
 
-    <section id="contact" class="py-16">
-    <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-12">Get Started</h2>
-        <div class="max-w-lg mx-auto">
-            <form 
-                action="https://formspree.io/f/xvgoqobp" 
-                method="POST" 
-                class="space-y-6">
-                
-                <div>
-                    <label class="block mb-2" for="name">Your Name</label>
-                    <input type="text" id="name" name="name" class="w-full p-2 border rounded-lg" placeholder="Enter your name" required>
-                </div>
-                
-                <div>
-                    <label class="block mb-2" for="email">Email</label>
-                    <input type="email" id="email" name="email" class="w-full p-2 border rounded-lg" placeholder="Enter your email" required>
-                </div>
-                
-                <div>
-                    <label class="block mb-2" for="dog-name">Dog's Name</label>
-                    <input type="text" id="dog-name" name="dog-name" class="w-full p-2 border rounded-lg" placeholder="Enter your dog's name" required>
-                </div>
-                
-                <div>
-                    <label class="block mb-2" for="message">Location: Pickup City</label>
-                    <textarea id="message" name="message" class="w-full p-2 border rounded-lg h-32" placeholder="Enter your message" required></textarea>
-                </div>
-                
-                <button type="submit" class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800">
-                    Send Message
-                </button>
-            </form>
-        </div>
-    </div>
-</section>
+    <!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xvgoqobp"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 
 
     <!-- Footer -->
