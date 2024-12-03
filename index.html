@@ -16,6 +16,27 @@
             transform: translateY(-5px);
             transition: transform 0.3s ease;
         }
+        .hero {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/549720e7e4b098bb33b3eca5/1621874013089-BXHWKPRTLATWUMDVGLWZ/%28W%29Dog-Bus.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay to make text readable */
+}
+
+.hero .container {
+    position: relative; /* Makes text appear above the overlay */
+    z-index: 1;
+}
     </style>
 </head>
 <body class="font-sans">
