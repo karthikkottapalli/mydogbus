@@ -17,7 +17,7 @@
             transition: transform 0.3s ease;
         }
         .hero {
-    background-image: url('https://images.squarespace-cdn.com/content/v1/549720e7e4b098bb33b3eca5/1621874013089-BXHWKPRTLATWUMDVGLWZ/%28W%29Dog-Bus.jpg');
+    background-image: url('https://i.imgur.com/29lfXsR.jpeg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -228,9 +228,82 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-8 pt-8 border-t border-blue-800">
-                <p>&copy; 2024 MyDogBus.com. All rights reserved.</p>
-            </div>
+            <!-- Add to Footer -->
+<div class="text-center mt-8 pt-8 border-t border-blue-800">
+    <p>&copy; 2024 MyDogBus.com. All rights reserved.</p>
+    <p>
+        <a href="#" id="terms-link" class="hover:underline">Terms and Conditions</a> |
+        <a href="#" id="privacy-link" class="hover:underline">Privacy Policy</a>
+    </p>
+</div>
+
+<!-- Modals -->
+<div id="terms-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex justify-center items-center">
+    <div class="bg-black rounded-lg p-6 w-3/4 max-w-lg">
+        <h2 class="text-2xl font-bold mb-4">Terms and Conditions</h2>
+<p>Last Updated: December 3rd, 2024</p>
+
+<p>Introduction</p>
+
+<p>Welcome to MyDogBus. These Terms and Conditions ("Terms") govern your use of our website and services.</p>
+
+<p>Acceptance of Terms</p>
+
+<p>By accessing or using our website, you agree to be bound by these Terms. If you do not agree to these Terms, you may not use our website.</p>
+
+<p>User Accounts To use certain features of our website, you may need to create an account. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account. Use of the Site You agree to use our website only for lawful purposes. You are prohibited from violating or attempting to violate the security of the site, including accessing data not intended for you or logging into a server or account you are not authorized to access. Intellectual Property All content on this site, including text, graphics, logos, and images, is the property of  MyDogBus or its content suppliers and is protected by copyright and trademark laws. Limitation of Liability In no event shall MyDogBus be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the site. Governing Law These Terms shall be governed by and construed in accordance with the laws of the land Changes to Terms We reserve the right to modify these Terms at any time. We will notify you of any changes by posting the new Terms on this page. Contact Us If you have any questions about these Terms, please contact us at woof@MyDogBus.com or 734-338-5332 </p>
+        <button id="close-terms" class="mt-4 bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800">Close</button>
+    </div>
+</div>
+
+<div id="privacy-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex justify-center items-center">
+    <div class="bg-white rounded-lg p-6 w-3/4 max-w-lg">
+        <h2 class="text-2xl font-bold mb-4">Privacy Policy</h2>
+Last Updated: December 4th, 2024
+
+<p>Introduction</p>
+
+<p>MyDogBus ("we," "our," "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose your information when you visit our website. Information We Collect Personal Information: We collect personal information that you provide to us when you register for an account, such as your name, email address, and payment information. Usage Data: We collect information about your interactions with our website, including the pages you visit, the time spent on the site, and other usage statistics. How We Use Your Information To provide, maintain, and improve our services. To process transactions and send related information. To communicate with you, including sending promotional materials. To comply with legal obligations. Sharing Your Information We do not sell your personal information to third parties. We may share your information with third-party service providers who assist us in operating our website, conducting our business, or servicing you, as long as those parties agree to keep this information confidential. Security We implement a variety of security measures to maintain the safety of your personal information. However, no method of transmission over the internet or electronic storage is 100% secure. Your Rights You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us at woof@MyDogBus.com Changes to This Privacy Policy We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. Contact Us If you have any questions about this Privacy Policy, please contact us at woof@MyDogBus.com</p>
+        <button id="close-privacy" class="mt-4 bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800">Close</button>
+    </div>
+</div>
+
+<!-- Add this Script Before Closing Body -->
+<script>
+    // Modal Toggles
+    const termsLink = document.getElementById('terms-link');
+    const privacyLink = document.getElementById('privacy-link');
+    const termsModal = document.getElementById('terms-modal');
+    const privacyModal = document.getElementById('privacy-modal');
+    const closeTerms = document.getElementById('close-terms');
+    const closePrivacy = document.getElementById('close-privacy');
+
+    termsLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        termsModal.classList.remove('hidden');
+    });
+
+    privacyLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        privacyModal.classList.remove('hidden');
+    });
+
+    closeTerms.addEventListener('click', () => {
+        termsModal.classList.add('hidden');
+    });
+
+    closePrivacy.addEventListener('click', () => {
+        privacyModal.classList.add('hidden');
+    });
+
+    // Close modal on outside click
+    [termsModal, privacyModal].forEach(modal => {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) modal.classList.add('hidden');
+        });
+    });
+</script>
+
         </div>
     </footer>
 
