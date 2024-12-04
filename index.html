@@ -58,7 +58,7 @@
         <div class="container mx-auto text-center">
             <h1 class="text-5xl font-bold mb-6">Your Dog's Favorite School Bus</h1>
             <p class="text-xl mb-8">Safe, reliable, and fun transportation to the doggy ranch and back!</p>
-            <button class="bg-yellow-400 text-blue-900 px-8 py-3 rounded-lg text-xl font-bold hover:bg-yellow-300">
+            <button id="schedule-ride-btn" class="bg-yellow-400 text-blue-900 px-8 py-3 rounded-lg text-xl font-bold hover:bg-yellow-300">
                 Schedule a Ride
             </button>
         </div>
@@ -127,7 +127,7 @@
                         <li>✓ GPS tracking</li>
                         <li>✓ Text updates</li>
                     </ul>
-                    <button class="w-full bg-yellow-400 text-blue-900 py-2 rounded-lg hover:bg-yellow-300">
+                    <button id="schedule-ride-btn1" class="w-full bg-yellow-400 text-blue-900 py-2 rounded-lg hover:bg-yellow-300">
                         Choose Plan
                     </button>
                 </div>
@@ -139,7 +139,7 @@
                         <li>✓ Ranch activities included</li>
                         <li>✓ Daily photo updates</li>
                     </ul>
-                    <button class="w-full bg-yellow-400 text-blue-900 py-2 rounded-lg hover:bg-yellow-300">
+                    <button id="schedule-ride-btn2" class="w-full bg-yellow-400 text-blue-900 py-2 rounded-lg hover:bg-yellow-300">
                         Choose Plan
                     </button>
                 </div>
@@ -152,7 +152,7 @@
                         <li>✓ Professionally Edited Video Memories</li>
                         <li>✓ Flexible scheduling</li>
                     </ul>
-                    <button class="w-full bg-yellow-400 text-blue-900 py-2 rounded-lg hover:bg-yellow-300">
+                    <button id="schedule-ride-btn3" class="w-full bg-yellow-400 text-blue-900 py-2 rounded-lg hover:bg-yellow-300">
                         Choose Plan
                     </button>
                 </div>
@@ -264,6 +264,16 @@
             }
         });
     }
+
+
+<!-- Add this script at the bottom of your page, before the closing body tag -->
+  // Get all buttons that should scroll to contact form
+  document.querySelectorAll('#schedule-ride-btn1, #schedule-ride-btn2,#schedule-ride-btn3,#schedule-ride-btn,.choose-plan-btn').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
 </script>
 </body>
 </html>
